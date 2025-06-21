@@ -17,7 +17,7 @@ st.set_page_config(page_title="MNIST Digit Generator", layout="centered")
 
 # ✅ Load the saved decoder model from the .pkl file
 @st.cache_resource
-def load_model(pickle_path="vae_mnist_tensorflow.pkl"):
+def load_model(pickle_path="vae_mnist_tensorflow_.pkl"):
     with open(pickle_path, "rb") as f:
         vae_wrapper = pickle.load(f)
     return vae_wrapper
